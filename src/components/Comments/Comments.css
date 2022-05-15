@@ -1,0 +1,22 @@
+.comment-wrap {
+    width: 60rem;
+    max-width: 80%;
+    margin: auto;
+  }
+  
+  .comment-wrap  h2 {
+    padding-bottom: 0;
+  }
+  .comment-wrap .list-header{
+    display:  flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /* MEDIA QUERY */
+  @media only screen and (max-width: 767px) {
+    .comment-wrap .list-header{
+      align-items: flex-start;
+    flex-direction: column;
+    }
+  }

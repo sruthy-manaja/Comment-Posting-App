@@ -1,0 +1,60 @@
+.comment-list {
+  margin: auto;
+}
+
+
+
+.comment-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.comment-list li {
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.26);
+  display: block;
+  transition: 0.8s all;
+}
+.comment-list li:hover{
+  transform: translateY(-3px) scale(1.005) translateZ(0);
+  box-shadow: 0 14px 36px rgba(0,0,0,0.11),
+    0 24px 46px #ccc;
+}
+.comment-list li a{
+  cursor: pointer;
+  justify-content: flex-end;
+  display: flex;
+  align-items: end;
+  font-size: 12px;
+    margin: 6px 0;
+    margin-top: 15px;
+}
+.comment-list li a img{
+  max-width: 20px;
+}
+.comment-list li div{
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #0e4c5f;
+}
+.comment-list li div span:first-child{
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.comment-list li div span em{
+  color: #0e4c5f94;
+  font-style: normal;
+  font-weight: 200;
+  text-transform: lowercase;
+}
+.pagination{
+  display: flex;
+  justify-content: space-between;
+}
+.pagination button.disabled{
+  pointer-events: none;
+  opacity: 0.5;
+}
